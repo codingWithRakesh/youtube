@@ -278,7 +278,7 @@
 	width: 82%;
 	min-height: calc(100vh - 8vh);
 	background: #fff;
-	border: 1px solid;
+/*	border: 1px solid;*/
 	position: absolute;
 	top: 8%;
 	right: 0;
@@ -301,6 +301,7 @@
 	align-items: center;
 	overflow-x: auto;
 	overflow-y: hidden;
+	z-index: 9;
 /*	flex-wrap: wrap;*/
 }
 .navigateBox::-webkit-scrollbar {
@@ -326,14 +327,7 @@
 	color: #fff;
 	background: #000;
 }
-.videoShow{
-	padding: 0 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	border: 1px solid;
-}
+
 .blurssb{
 	height: 4rem;
     width: 4rem;
@@ -388,8 +382,186 @@
 	cursor: pointer;
 }
 
+.videoShow{
+	padding: 10vh 1rem 1rem 1rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+/*	border: 1px solid;*/
+	min-height: 100%;
+	width: 100%;
+}
+
 .videoCon{
-	width: 20vw;
-	height: 20vh;
-	border: 1px solid;
+	width: 100%;
+	height: 20rem;
+/*	border: 1px solid;*/
+	flex: 0 0 auto;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.playVide1{
+	height: 100%;
+	width: 32%;
+/*	border: 1px solid;*/
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.VideoC{
+	width: 100%;
+	height: 60%;
+/*	border: 1px solid;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+.VideoC video{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.videohh{
+	width: 100%;
+	height: 40%;
+/*	border: 1px solid;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.videoProfileC{
+	height: 100%;
+	width: 15%;
+/*	border: 1px solid;*/
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+.profileBo{
+	height: 36px;
+	width: 36px;
+/*	border: 1px solid;*/
+	border-radius: 50%;
+	background-image: url('images/user.png');
+	background-size: cover;
+}
+.videoWri{
+	height: 100%;
+	width: 90%;
+/*	border: 1px solid;*/
+	padding: 10px 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.write1{
+	width: 100%;
+	min-height: 1.5rem;
+/*	border: 1px solid;*/
+	padding: 0 5px;
+}
+.font1{
+	font-size: 16px;
+	font-weight: 600;
+	color: #0F0F0F;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.font2{
+	font-size: 14px;
+	color: #606060;
+}
+
+.shortCon{
+	width: 100%;
+	height: 75vh;
+/*	border: 1px solid;*/
+}
+.shortFir{
+	width: 100%;
+	height: 10%;
+/*	border: 1px solid;*/
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.shortLogo{
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 20%;
+/*	border: 1px solid;*/
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.shorL{
+	margin: 0 8px;
+}
+.shoWri{
+	font-size: 20px;
+	color: #0F0F0F;
+}
+.crosIcon{
+	position: absolute;
+	right: 0;
+	height: 40px;
+	width: 40px;
+/*	border: 1px solid;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.shortSec{
+	width: 100%;
+	height: 90%;
+/*	border: 1px solid;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.shortsDiv{
+	height: 100%;
+	width: 19%;
+/*	border: 1px solid;*/
+}
+.shortVid{
+	width: 100%;
+	height: 80%;
+/*	border: 1px solid;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+.shortVid video{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.shortWri{
+	width: 100%;
+	height: 20%;
+/*	border: 1px solid;*/
+	padding: 10px 0;
+}
+.shortW1{
+	width: 100%;
+	min-height: 1.5rem;
 }
