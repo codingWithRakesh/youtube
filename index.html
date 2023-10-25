@@ -13,7 +13,7 @@
 	<div class="contaner">
 		<nav class="navBox">
 			<div class="navTLeft">
-				<div class="navLeftIcon navLeftIconHover">
+				<div id="navId" class="navLeftIcon navLeftIconHover">
 					<i class="fa-solid fa-bars"></i>
 				</div>
 				<div class="Logo">
@@ -23,7 +23,7 @@
 			<div class="navTCenter">
 				<div class="serchBox">
 					<div class="inputSerBox">
-						<input type="search" name="search" placeholder="Search">
+						<input type="search" name="search" placeholder="Search" id="valuId">
 					</div>
 					<div class="iconSerBox backGrF8">
 						<i class="fa-solid fa-magnifying-glass"></i>
@@ -34,7 +34,7 @@
 				</div>
 			</div>
 			<div class="navTRight">
-				<div class="navLeftIcon navLeftIconHover">
+				<div class="navLeftIcon navLeftIconHover" id="uploadId">
 					<svg height="24" style="pointer-events: none; display: block; width: 80%; height: 70%;"
 						viewBox="0 0 24 24" width="24" focusable="false">
 						<path
@@ -42,7 +42,7 @@
 						</path>
 					</svg>
 				</div>
-				<div class="navLeftIcon navLeftIconHover">
+				<div class="navLeftIcon navLeftIconHover" id="notificationId">
 					<svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false"
 						style="pointer-events: none; display: block; width: 80%; height: 70%;">
 						<path
@@ -50,14 +50,14 @@
 						</path>
 					</svg>
 				</div>
-				<div class="navLeftIcon navLeftIconHover">
+				<div class="navLeftIcon navLeftIconHover" id="userId">
 					<img src="images/user.png">
 				</div>
 			</div>
 		</nav>
 
 		<!-- Serch nav box -->
-		<div class="serchNav displayFlex displayNone"> <!-- displayNone -->
+		<div class="serchNav displayFlex displayNone"> <!-- displayFlex -->
 			<div id="historyDiv" class="displayNone displayBlock"> <!-- displayBlock -->
 				<div class="serchCon">
 					<div class="serchLeft">
@@ -267,7 +267,7 @@
 		</div>
 
 		<!-- upload video -->
-		<div class="uploadVideo displayNone "> <!--displayNone-->
+		<div class="uploadVideo displayNone "> <!--displayBlock-->
 			<div class="uploadContaner">
 				<div class="uploadIcon">
 					<svg enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false"
@@ -324,7 +324,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -341,7 +341,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -358,7 +358,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -375,7 +375,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -392,7 +392,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -409,7 +409,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -426,7 +426,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -443,7 +443,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -460,7 +460,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -477,7 +477,7 @@
 					</div>
 					<div class="videoIcon">
 						<div class="notiVidThum"></div>
-						<div class="threeDot opacity1">
+						<div class="threeDot opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1244,15 +1244,15 @@
 				</div>
 			</div>
 		</nav>
-		<div class="contentBox">
-			<div class="navigateBox">
-				<div class="blurssb">
+		<div class="contentBox width_82">
+			<div class="navigateBox width_79 left_19">
+				<div class="blurssb displayFlex displayNone" id="leftBtn"> <!-- displayNone -->
 					<div class="ugdLeft navLeftIconHover">
 						<i class="fa-solid fa-chevron-left"></i>
 					</div>
 				</div>
 
-				<div class="tapNavSc colorbhsd">
+				<div class="tapNavSc colorbhsd displayFlex " id="AllId"> <!-- displayNone -->
 					All
 				</div>
 				<div class="tapNavSc navLeftIconHover">
@@ -1316,7 +1316,7 @@
 					Music
 				</div>
 
-				<div class="blurssb2">
+				<div class="blurssb2 displayFlex" id="rightBtn"> <!-- displayNone -->
 					<div class="ugdRight navLeftIconHover">
 						<i class="fa-solid fa-chevron-left fa-rotate-180"></i>
 					</div>
@@ -1453,7 +1453,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="shortCon">
+				<div class="shortCon displayBlock displayNone"> <!-- displayBlock -->
 					<div class="shortFir">
 						<div class="shortLogo">
 							<div class="shorL">
@@ -1596,7 +1596,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="shortCon">
+				<div class="shortCon displayBlock displayNone"> <!-- displayBlock -->
 					<div class="shortFir">
 						<div class="shortLogo">
 							<div class="shorL">
@@ -1808,6 +1808,7 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

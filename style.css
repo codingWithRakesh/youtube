@@ -6,13 +6,13 @@
 	font-family: roboto;
 }
 .displayFlex{
-	display: flex;
+	display: flex !important;
 }
 .displayNone{
-	display: none;
+	display: none !important;
 }
 .displayBlock{
-	display: block;
+	display: block !important;
 }
 .bold{
 	font-weight: 800;
@@ -23,13 +23,33 @@
 .width_5{
 	width: 5%;
 }
+.width_82{
+	width: 82%;
+}
+.width_95{
+	width: 95%;
+}
 .opacity0{
 	opacity: 0;
 }
 .opacity1{
 	opacity: 1;
 }
-
+.borderRadius{
+	border-radius: 0 !important;
+}
+.width_94{
+	width: 94%;
+}
+.left_5{
+	left: 5vw;
+}
+.width_79{
+	width: 79%;
+}
+.left_19{
+	left: 19vw;
+}
 
 
 
@@ -284,7 +304,7 @@
 }
 
 .contentBox{
-	width: 82%;
+/*	width: 82%;*/
 	min-height: calc(100vh - 8vh);
 	background: #fff;
 /*	border: 1px solid;*/
@@ -300,11 +320,11 @@
 /*	padding: 1rem;*/
 }
 .navigateBox{
-	width: 79%;
+/*	width: 79%;*/
 	height: 10%;
 /*	border: 1px solid;*/
 	position: fixed;
-	left: 19vw;
+/*	left: 19vw;*/
 	background: #fff;
 	display: flex;
 	align-items: center;
@@ -340,7 +360,7 @@
 .blurssb{
 	height: 4rem;
     width: 4rem;
-    display: flex;
+/*    display: flex;*/
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
@@ -355,7 +375,7 @@
 .blurssb2{
 	height: 4rem;
     width: 4rem;
-    display: flex;
+/*    display: flex;*/
     flex: 0 0 auto;
     align-items: center;
     justify-content: center;
