@@ -4,7 +4,7 @@ let fullNav = document.getElementById('fullNav');
 let smallNav = document.getElementById('smallNav');
 let leftNav = document.getElementsByClassName('leftNav')[0];
 let contentBox = document.getElementsByClassName('contentBox')[0];
-let navigateBox = document.getElementsByClassName('navigateBox')[0];
+// let navigateBox = document.getElementsByClassName('navigateBox')[0];
 let checkNavL = true;
 
 navId.addEventListener('click',()=>{
@@ -18,10 +18,11 @@ navId.addEventListener('click',()=>{
 		contentBox.classList.remove('width_82');
 		contentBox.classList.add('width_95');
 
-		navigateBox.classList.add('width_94');
-		navigateBox.classList.remove('width_79');
-		navigateBox.classList.remove('left_19');
-		navigateBox.classList.add('left_5');
+		// navigateBox.classList.add('width_94');
+		// navigateBox.classList.remove('width_79');
+		// navigateBox.classList.remove('left_19');
+		// navigateBox.classList.add('left_5');
+		widthNav94()
 
 		checkNavL = false;
 	}
@@ -35,10 +36,11 @@ navId.addEventListener('click',()=>{
 		contentBox.classList.add('width_82');
 		contentBox.classList.remove('width_95');
 
-		navigateBox.classList.remove('width_94');
-		navigateBox.classList.add('width_79');
-		navigateBox.classList.add('left_19');
-		navigateBox.classList.remove('left_5');
+		// navigateBox.classList.remove('width_94');
+		// navigateBox.classList.add('width_79');
+		// navigateBox.classList.add('left_19');
+		// navigateBox.classList.remove('left_5');
+		widthNav79()
 
 		checkNavL = true;
 	}
@@ -177,4 +179,18 @@ window.addEventListener('click',()=>{
 	else if (!checkWindow) {
 		checkWindow = true;
 	}
+})
+
+// home click
+let homeId = document.getElementById('homeId')
+let shortsId = document.getElementById('shortsId')
+let subscriptionsId = document.getElementById('subscriptionsId')
+let libraryId = document.getElementById('libraryId')
+
+// homeId.addEventListener('click',()=>{
+// 	location.href = '../index.html'
+// })
+
+shortsId.addEventListener('click',()=>{
+	location.href = 'shorts/shorts.html'
 })

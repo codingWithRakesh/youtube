@@ -16,7 +16,6 @@ for (let i = 0; i < video.length; i++) {
             }
         }
 
-        // video[i].play()
         if (video[i].offsetHeight <= 200) {
             video[i].classList.add('borderRadius')
         }
@@ -25,7 +24,7 @@ for (let i = 0; i < video.length; i++) {
     video[i].addEventListener('mouseout',()=>{
         mouseCheck = false
     	video[i].pause()
-         if (video[i].offsetHeight <= 200) {
+        if (video[i].offsetHeight <= 200) {
             video[i].classList.remove('borderRadius')
         }
     })
@@ -52,7 +51,6 @@ let leftBtn = document.getElementById('leftBtn');
 
 let navigateBox2 = document.getElementsByClassName('navigateBox')[0]
 
-
 navigateBox2.addEventListener('scroll',()=>{
     if (navigateBox2.scrollLeft == 0) {
         leftBtn.classList.add('displayNone')
@@ -65,7 +63,6 @@ navigateBox2.addEventListener('scroll',()=>{
 })
 
 rightBtn.addEventListener('click',()=>{
-    // alert(navigateBox2.scrollLeft)
     navigateBox2.scrollLeft += 90;
     leftBtn.classList.remove('displayNone')
 })
@@ -76,5 +73,19 @@ leftBtn.addEventListener('click',()=>{
         leftBtn.classList.add('displayNone')
         allId.classList.remove('displayNone')
     }
-    // alert()
 })
+
+let navigateBox = document.getElementsByClassName('navigateBox')[0];
+const widthNav94 = () =>{
+    navigateBox.classList.add('width_94');
+    navigateBox.classList.remove('width_79');
+    navigateBox.classList.remove('left_19');
+    navigateBox.classList.add('left_5');
+}
+
+const widthNav79 = () =>{
+    navigateBox.classList.remove('width_94');
+    navigateBox.classList.add('width_79');
+    navigateBox.classList.add('left_19');
+    navigateBox.classList.remove('left_5');
+}
