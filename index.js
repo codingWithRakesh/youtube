@@ -1,16 +1,19 @@
 // video box
 
 let video = document.getElementsByTagName('video')
+let allVideo = document.getElementsByClassName('allVideo')
+let videoThumnel = document.getElementsByClassName('videoThumnel')
 let mouseCheck = false;
 
 for (let i = 0; i < video.length; i++) {
     video[i].muted = true
-    video[i].addEventListener('mouseover',()=>{
+    allVideo[i].addEventListener('mouseover',()=>{
         mouseCheck = true
         var time = new Date();
         while(mouseCheck == true){
             var time2 = new Date();
-            if (time2.getSeconds() - time.getSeconds() == 2) {
+            if (time2.getSeconds() - time.getSeconds() == 1) {
+                videoThumnel[i].classList.remove('displayBlock')
                 video[i].play()
                 break
             }
@@ -24,13 +27,20 @@ for (let i = 0; i < video.length; i++) {
     video[i].addEventListener('mouseout',()=>{
         mouseCheck = false
     	video[i].pause()
+        videoThumnel[i].classList.add('displayBlock')
         if (video[i].offsetHeight <= 200) {
             video[i].classList.remove('borderRadius')
+            // videoThumnel[i].classList.add('displayBlock')
         }
     })
 
     video[i].addEventListener('click',()=>{
-        alert()
+        if (video[i].offsetHeight <= 200) {
+            alert('big')
+        }
+        else if (video[i].offsetHeight >= 200) {
+            location.href = 'shorts/shorts.html'
+        }
     })
 }
 
@@ -75,17 +85,17 @@ leftBtn.addEventListener('click',()=>{
     }
 })
 
-let navigateBox = document.getElementsByClassName('navigateBox')[0];
-const widthNav94 = () =>{
-    navigateBox.classList.add('width_94');
-    navigateBox.classList.remove('width_79');
-    navigateBox.classList.remove('left_19');
-    navigateBox.classList.add('left_5');
-}
+// let navigateBox = document.getElementsByClassName('navigateBox')[0];
+// const widthNav94 = () =>{
+//     navigateBox.classList.add('width_94');
+//     navigateBox.classList.remove('width_79');
+//     navigateBox.classList.remove('left_19');
+//     navigateBox.classList.add('left_5');
+// }
 
-const widthNav79 = () =>{
-    navigateBox.classList.remove('width_94');
-    navigateBox.classList.add('width_79');
-    navigateBox.classList.add('left_19');
-    navigateBox.classList.remove('left_5');
-}
+// const widthNav79 = () =>{
+//     navigateBox.classList.remove('width_94');
+//     navigateBox.classList.add('width_79');
+//     navigateBox.classList.add('left_19');
+//     navigateBox.classList.remove('left_5');
+// }
