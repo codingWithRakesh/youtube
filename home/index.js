@@ -8,7 +8,7 @@ let videoThumnel = document.getElementsByClassName('videoThumnel');
 for (let i = 0; i < video.length; i++) {
     video[i].muted = true;
     // var mouseout = new Date()
-    allVideo[i].addEventListener('mouseover',()=>{
+    allVideo[i].addEventListener('mouseover', () => {
         // first try
 
         // mouseCheck = true;
@@ -43,9 +43,9 @@ for (let i = 0; i < video.length; i++) {
         }
     })
 
-    video[i].addEventListener('mouseout',()=>{
+    video[i].addEventListener('mouseout', () => {
         // mouseout = new Date();
-    	video[i].pause();
+        video[i].pause();
 
         videoThumnel[i].classList.add('displayBlock');
         if (video[i].offsetHeight <= 200) {
@@ -53,7 +53,7 @@ for (let i = 0; i < video.length; i++) {
         }
     })
 
-    video[i].addEventListener('click',()=>{
+    video[i].addEventListener('click', () => {
         if (video[i].offsetHeight <= 200) {
             alert('big');
         }
@@ -68,8 +68,8 @@ let shortCon = document.getElementsByClassName('shortCon');
 let crosIcon = document.getElementsByClassName('crosIcon ');
 
 for (let i = 0; i < shortCon.length; i++) {
-    crosIcon[i].addEventListener('click',()=>{
-       shortCon[i].classList.remove('displayBlock');
+    crosIcon[i].addEventListener('click', () => {
+        shortCon[i].classList.remove('displayBlock');
     })
 }
 
@@ -80,7 +80,7 @@ let leftBtn = document.getElementById('leftBtn');
 
 let navigateBox2 = document.getElementsByClassName('navigateBox')[0];
 
-navigateBox2.addEventListener('scroll',()=>{
+navigateBox2.addEventListener('scroll', () => {
     if (navigateBox2.scrollLeft == 0) {
         leftBtn.classList.add('displayNone');
         allId.classList.remove('displayNone');
@@ -91,12 +91,12 @@ navigateBox2.addEventListener('scroll',()=>{
     }
 })
 
-rightBtn.addEventListener('click',()=>{
+rightBtn.addEventListener('click', () => {
     navigateBox2.scrollLeft += 90;
     leftBtn.classList.remove('displayNone');
 })
 
-leftBtn.addEventListener('click',()=>{
+leftBtn.addEventListener('click', () => {
     navigateBox2.scrollLeft -= 90;
     if (navigateBox2.scrollLeft == 0) {
         leftBtn.classList.add('displayNone');

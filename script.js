@@ -4,16 +4,16 @@ let shortsId = document.getElementById('shortsId');
 let subscriptionsId = document.getElementById('subscriptionsId');
 let libraryId = document.getElementById('libraryId');
 
-homeId.addEventListener('click',()=>{
+homeId.addEventListener('click', () => {
 	location.href = '../home/index.html';
 })
-shortsId.addEventListener('click',()=>{
+shortsId.addEventListener('click', () => {
 	location.href = '../shorts/shorts.html';
 })
-subscriptionsId.addEventListener('click',()=>{
+subscriptionsId.addEventListener('click', () => {
 	location.href = '../subscriptions/subscriptions.html';
 })
-libraryId.addEventListener('click',()=>{
+libraryId.addEventListener('click', () => {
 	location.href = '../library/library.html';
 })
 
@@ -27,7 +27,7 @@ let contentBox = document.getElementsByClassName('contentBox')[0];
 let navigateBox = document.getElementsByClassName('navigateBox')[0];
 let checkNavL = true;
 
-navId.addEventListener('click',()=>{
+navId.addEventListener('click', () => {
 	if (checkNavL) {
 		leftNav.classList.add('width_5');
 		leftNav.classList.remove('width_18');
@@ -92,7 +92,7 @@ let check = true;
 
 // upload
 let uploadVideo = document.getElementsByClassName('uploadVideo')[0];
-uploadId.addEventListener('click',()=>{
+uploadId.addEventListener('click', () => {
 
 	if (check) {
 		uploadId.innerHTML = `
@@ -126,7 +126,7 @@ uploadId.addEventListener('click',()=>{
 
 // notification
 let notificationContaner = document.getElementsByClassName('notificationContaner')[0];
-notificationId.addEventListener('click',()=>{
+notificationId.addEventListener('click', () => {
 
 	if (check) {
 		notificationId.innerHTML = `
@@ -158,22 +158,22 @@ notificationId.addEventListener('click',()=>{
 
 let notifiShow = document.getElementsByClassName('notifiShow');
 let threeDot = document.getElementsByClassName('threeDot');
-for (let i = 0; i < notifiShow.length ; i++) {
+for (let i = 0; i < notifiShow.length; i++) {
 
-    notifiShow[i].addEventListener('mouseover',()=>{
-    	threeDot[i].classList.add('opacity1');
-    	threeDot[i].classList.remove('opacity0');
-    });
+	notifiShow[i].addEventListener('mouseover', () => {
+		threeDot[i].classList.add('opacity1');
+		threeDot[i].classList.remove('opacity0');
+	});
 
-    notifiShow[i].addEventListener('mouseout',()=>{
-    	threeDot[i].classList.remove('opacity1');
-    	threeDot[i].classList.add('opacity0');
-    });
+	notifiShow[i].addEventListener('mouseout', () => {
+		threeDot[i].classList.remove('opacity1');
+		threeDot[i].classList.add('opacity0');
+	});
 }
 
 // profile
 let profileContaner = document.getElementsByClassName('profileContaner')[0];
-userId.addEventListener('click',()=>{
+userId.addEventListener('click', () => {
 	profileContaner.classList.toggle('displayBlock');
 
 	notificationContaner.classList.remove('displayBlock');
@@ -188,28 +188,28 @@ let serchDiv = document.getElementById('serchDiv');
 let valuId;
 let checkWindow = true;
 
-input.addEventListener('click',()=>{
+input.addEventListener('click', () => {
 	serchNav.classList.add('displayBlock');
 	checkWindow = false;
 })
 
-input.addEventListener('input',()=>{
+input.addEventListener('input', () => {
 	valuId = document.getElementById('valuId').value;
 	if (valuId == "") {
 		serchDiv.classList.remove('displayBlock');
 		historyDiv.classList.add('displayBlock');
 	}
-	else{
+	else {
 		serchDiv.classList.add('displayBlock');
 		historyDiv.classList.remove('displayBlock');
 	}
 });
 
-serchNav.addEventListener('click',()=>{
+serchNav.addEventListener('click', () => {
 	checkWindow = false;
 })
 
-window.addEventListener('click',()=>{
+window.addEventListener('click', () => {
 	if (checkWindow) {
 		serchNav.classList.remove('displayBlock');
 		checkWindow = false;

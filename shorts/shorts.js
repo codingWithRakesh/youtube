@@ -20,10 +20,10 @@ let unLikeBTN = document.getElementsByClassName('unLikeBTN');
 let lb = document.getElementsByClassName('lb');
 let ub = document.getElementsByClassName('ub');
 
-for(let i = 0; i < shortBox.length; i++){
+for (let i = 0; i < shortBox.length; i++) {
 	video[i].autoplay = false;
 	video[i].loop = true
-	video[i].addEventListener('click',()=>{
+	video[i].addEventListener('click', () => {
 		if (checkVideo) {
 			video[i].play();
 			topIconLeft[i].innerHTML = `<i class="fa-solid fa-play"></i>`;
@@ -39,7 +39,7 @@ for(let i = 0; i < shortBox.length; i++){
 			checkVideo = true;
 		}
 	})
-	topIconLeft[i].addEventListener('click',()=>{
+	topIconLeft[i].addEventListener('click', () => {
 		if (checkVideo) {
 			video[i].play();
 			topIconLeft[i].innerHTML = `<i class="fa-solid fa-play"></i>`;
@@ -55,7 +55,7 @@ for(let i = 0; i < shortBox.length; i++){
 			checkVideo = true;
 		}
 	})
-	videoMiddle[i].addEventListener('click',()=>{
+	videoMiddle[i].addEventListener('click', () => {
 		if (checkVideo) {
 			video[i].play();
 			topIconLeft[i].innerHTML = `<i class="fa-solid fa-play"></i>`;
@@ -71,7 +71,7 @@ for(let i = 0; i < shortBox.length; i++){
 			checkVideo = true;
 		}
 	})
-	topIconRight[i].addEventListener('click',()=>{
+	topIconRight[i].addEventListener('click', () => {
 		if (checkVideo) {
 			video[i].muted = true;
 			topIconRight[i].innerHTML = `<i class="fa-solid fa-volume-xmark"></i>`;
@@ -83,13 +83,13 @@ for(let i = 0; i < shortBox.length; i++){
 			checkVideo = true;
 		}
 	})
-	const playB = () =>{
+	const playB = () => {
 		playPuC[i].classList.remove('displayNone');
-		setTimeout(()=>{
+		setTimeout(() => {
 			playPuC[i].classList.add('displayNone');
-		},1000)
+		}, 1000)
 	}
-	allSubBtn[i].addEventListener('click',()=>{
+	allSubBtn[i].addEventListener('click', () => {
 		if (checkSUbs) {
 			allSubBtn[i].classList.add('subscribe');
 			allSubBtn[i].classList.remove('subscribed');
@@ -105,27 +105,27 @@ for(let i = 0; i < shortBox.length; i++){
 			checkSUbs = true;
 		}
 	})
-	likeBTN[i].addEventListener('click',()=>{
+	likeBTN[i].addEventListener('click', () => {
 		lb[i].classList.toggle('like');
 		lb[i].classList.toggle('navLeftIconHover');
 
 		ub[i].classList.remove('like');
 		ub[i].classList.add('navLeftIconHover');
 	})
-	unLikeBTN[i].addEventListener('click',()=>{
+	unLikeBTN[i].addEventListener('click', () => {
 		ub[i].classList.toggle('like');
 		ub[i].classList.toggle('navLeftIconHover');
 
 		lb[i].classList.remove('like');
 		lb[i].classList.add('navLeftIconHover');
 	})
-	shortsMain[i].addEventListener('mouseenter',()=>{
+	shortsMain[i].addEventListener('mouseenter', () => {
 		video[i].play()
 		video[i].loop = true
 		video[i].muted = false
 		topIconRight[i].innerHTML = `<i class="fa-solid fa-volume-high"></i>`
 	})
-	shortsMain[i].addEventListener('mouseout',()=>{
+	shortsMain[i].addEventListener('mouseout', () => {
 		video[i].pause()
 	})
 }
