@@ -55,7 +55,7 @@ for (let i = 0; i < video.length; i++) {
 
     video[i].addEventListener('click', () => {
         if (video[i].offsetHeight <= 200) {
-            alert('big');
+            location.href = '../videoPlay/videoPlay.html';
         }
         else if (video[i].offsetHeight >= 200) {
             location.href = '../shorts/shorts.html';

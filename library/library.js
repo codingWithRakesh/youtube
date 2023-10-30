@@ -35,7 +35,7 @@ for (let i = 0; i < videoImage12.length; i++) {
     })
 
     video[i].addEventListener('click',()=>{
-        alert('big')
+        location.href = '../videoPlay/videoPlay.html';
     })
 }
 

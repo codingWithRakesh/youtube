@@ -27,62 +27,64 @@ let contentBox = document.getElementsByClassName('contentBox')[0];
 let navigateBox = document.getElementsByClassName('navigateBox')[0];
 let checkNavL = true;
 
-navId.addEventListener('click', () => {
-	if (checkNavL) {
-		leftNav.classList.add('width_5');
-		leftNav.classList.remove('width_18');
+if (navId != null) {
+	navId.addEventListener('click', () => {
+		if (checkNavL) {
+			leftNav.classList.add('width_5');
+			leftNav.classList.remove('width_18');
 
-		fullNav.classList.remove('displayBlock');
-		smallNav.classList.add('displayBlock');
+			fullNav.classList.remove('displayBlock');
+			smallNav.classList.add('displayBlock');
 
-		contentBox.classList.remove('width_82');
-		contentBox.classList.add('width_95');
+			contentBox.classList.remove('width_82');
+			contentBox.classList.add('width_95');
 
-		if (navigateBox != null) {
-			if (navigateBox.classList.contains('position_fixed')) {
-				navigateBox.classList.add('width_94');
-				navigateBox.classList.remove('width_79');
-				navigateBox.classList.remove('left_19');
-				navigateBox.classList.add('left_5');
+			if (navigateBox != null) {
+				if (navigateBox.classList.contains('position_fixed')) {
+					navigateBox.classList.add('width_94');
+					navigateBox.classList.remove('width_79');
+					navigateBox.classList.remove('left_19');
+					navigateBox.classList.add('left_5');
+				}
+				else if (navigateBox.classList.contains('position_absolute')) {
+					navigateBox.classList.add('width_97');
+					navigateBox.classList.remove('width_79');
+					navigateBox.classList.remove('left_19');
+					navigateBox.classList.add('left_1rem');
+				}
 			}
-			else if (navigateBox.classList.contains('position_absolute')) {
-				navigateBox.classList.add('width_97');
-				navigateBox.classList.remove('width_79');
-				navigateBox.classList.remove('left_19');
-				navigateBox.classList.add('left_1rem');
-			}
+
+			checkNavL = false;
 		}
+		else if (!checkNavL) {
+			leftNav.classList.remove('width_5');
+			leftNav.classList.add('width_18');
 
-		checkNavL = false;
-	}
-	else if (!checkNavL) {
-		leftNav.classList.remove('width_5');
-		leftNav.classList.add('width_18');
+			fullNav.classList.add('displayBlock');
+			smallNav.classList.remove('displayBlock');
 
-		fullNav.classList.add('displayBlock');
-		smallNav.classList.remove('displayBlock');
+			contentBox.classList.add('width_82');
+			contentBox.classList.remove('width_95');
 
-		contentBox.classList.add('width_82');
-		contentBox.classList.remove('width_95');
-
-		if (navigateBox != null) {
-			if (navigateBox.classList.contains('position_fixed')) {
-				navigateBox.classList.remove('width_94');
-				navigateBox.classList.add('width_79');
-				navigateBox.classList.add('left_19');
-				navigateBox.classList.remove('left_5');
+			if (navigateBox != null) {
+				if (navigateBox.classList.contains('position_fixed')) {
+					navigateBox.classList.remove('width_94');
+					navigateBox.classList.add('width_79');
+					navigateBox.classList.add('left_19');
+					navigateBox.classList.remove('left_5');
+				}
+				else if (navigateBox.classList.contains('position_absolute')) {
+					navigateBox.classList.add('width_97');
+					// navigateBox.classList.remove('width_97');
+					navigateBox.classList.remove('left_1rem');
+					navigateBox.classList.add('left_1rem');
+				}
 			}
-			else if (navigateBox.classList.contains('position_absolute')) {
-				navigateBox.classList.add('width_97');
-				// navigateBox.classList.remove('width_97');
-				navigateBox.classList.remove('left_1rem');
-				navigateBox.classList.add('left_1rem');
-			}
+
+			checkNavL = true;
 		}
-
-		checkNavL = true;
-	}
-})
+	})
+}
 
 let uploadId = document.getElementById('uploadId');
 let notificationId = document.getElementById('notificationId');

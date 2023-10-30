@@ -83,6 +83,14 @@
 	width: 97%;
 }
 
+.width_100 {
+	width: 100%;
+}
+
+.z-index_29 {
+	z-index: 29;
+}
+
 .animason {
 	animation: animRipples .5s ease;
 }
@@ -396,7 +404,7 @@
 	/*	width: 82%;*/
 	min-height: calc(100vh - 8vh);
 	background: #fff;
-	/*	border: 1px solid;*/
+/*	border: 1px solid;*/
 	position: absolute;
 	top: 8%;
 	right: 0;
@@ -1832,4 +1840,325 @@ video {
 	margin-left: 0;
 	font-size: 1rem;
 	margin-right: 1rem;
+}
+
+
+
+/*video Play Contaner*/
+
+.videoPlayContaner{
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem;
+}
+
+.left-video-Box{
+	height: 100%;
+	width: 66%;
+/*	border: 1px solid;*/
+	padding-left: 10px;
+}
+
+.right-video-Box{
+	height: 100%;
+	width: 34%;
+	border: 1px solid;
+}
+
+.videoBoxdkjb{
+	width: 100%;
+	height: 30rem;
+	margin-bottom: 10px;
+/*	border: 1px solid;*/
+}
+
+.videoBoxdkjb video{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.jbjbbjwo{
+	width: 100%;
+/*	border: 1px solid;*/
+}
+
+.write_vidoevjjbdv{
+	min-height: 30px;
+	width: 100%;
+/*	border: 1px solid;*/
+	font-size: 20px;
+	font-weight: 600;
+	color: #0F0F0F;
+}
+
+.rowLikeNadSubs{
+	height: 55px;
+	width: 100%;
+/*	border: 1px solid;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rowSubscribe{
+	width: 50%;
+	height: 100%;
+/*	border: 1px solid;*/
+	background: #fff;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.rowLike{
+	width: 50%;
+	height: 100%;
+/*	border: 1px solid;*/
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 8px;
+}
+
+.profileBtn{
+	height: 40px;
+	width: 40px;
+/*	border: 1px solid;*/
+	border-radius: 50%;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.profileBtn img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.wri_vvbjdjbds{
+	height: 43px;
+/*	width: 150px;*/
+/*	border: 1px solid;*/
+	display: flex;
+/*	align-items: center;*/
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-right: 8px;
+	cursor: pointer;
+}
+
+.nameYouCha{
+	margin:0 1.6px 0 0;
+	padding:0 1.6px 0 0;
+}
+
+.countSubs{
+	font-size: 12px;
+	color: #606060;
+	margin: 0 4px 0 0;
+}
+
+.joinBtn{
+	width: 60px;
+	height: 36px;
+	border: 2px solid #F8F8F8;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.subscribeBtnBox{
+/*	width: 150px;*/
+/*	min-height: 172px;*/
+/*	border: 1px solid;*/
+	position: absolute;
+	top: 10px;
+	left: 16rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subscribeBtn{
+	width: ; /*150px*/
+	height: 36px;
+/*	border: 1px solid;*/
+	border-radius: 50px;
+}
+
+.notiMuteUnCon{
+	width: 150px;
+	height: 160px;
+/*	border: 1px solid;*/
+	border-radius: 10px;
+	padding: 8px 0;
+	background: #fff;
+}
+
+#subscribeId{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #000;
+	color: #fff;
+	height: 100%;
+	width: 90px;
+	border-radius: 50px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#subscribedId{
+	width: 150px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 50px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.fontColo{
+	color: #000;
+}
+
+.bigIc{
+	font-size: 25px;
+}
+
+.medeIc{
+	font-size: 18px;
+	font-weight: 0;
+}
+
+.subsCondjv{
+	width: 100%;
+	height: 36px;
+/*	border: 1px solid;*/
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.iconSubCon{
+	width: 24px;
+	height: 24px;
+/*	border: 1px solid;*/
+	margin-right: 10px;
+}
+
+.wriSubConfdf{
+	height: 25px;
+	flex: auto;
+/*	border: 1px solid;*/
+	font-size: 14px;
+	color: #0F0F0F;
+	display: flex;
+	align-items: center;
+}
+
+.iconSubs{
+	height: 24px;
+	width: 24px;
+}
+
+.likeUlikeCon{
+	width: 136px;
+	height: 36px;
+/*	border: 1px solid;*/
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.sharCon{
+	width: 92px;
+	height: 36px;
+	border-radius: 50px;
+/*	border: 1px solid;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.downCon{
+	width: 118px;
+	height: 36px;
+	border-radius: 50px;
+/*	border: 1px solid;*/
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.otherCon{
+	width: 36px;
+	height: 36px;
+	border-radius: 50px;
+/*	border: 1px solid;*/
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.videoLikeBtn{
+	height: 100%;
+	width: 65%;
+	border-right: 1px solid gray;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.videoUnLikeBtn{
+	height: 100%;
+	width: 35%;
+/*	border: 1px solid;*/
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.perLikeVid{
+	width: 28px;
+	height: 28px;
+/*	border: 1px solid;*/
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.likeVidCou{
+	font-size: 14px;
+}
+
+.ma-10{
+	margin-right: 8px;
 }
