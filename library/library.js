@@ -34,7 +34,7 @@ for (let i = 0; i < videoImage12.length; i++) {
         imagevie[i].classList.add('displayBlock')
     })
 
-    video[i].addEventListener('click',()=>{
+    video[i].addEventListener('click', () => {
         location.href = '../videoPlay/videoPlay.html';
     })
 }
@@ -51,7 +51,7 @@ for (let i = 0; i < shortImage12.length; i++) {
         short[i].pause()
     })
 
-    short[i].addEventListener('click',()=>{
+    short[i].addEventListener('click', () => {
         location.href = '../shorts/shorts.html';
     })
 }

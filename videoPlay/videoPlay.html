@@ -1265,9 +1265,17 @@
 			<div class="videoPlayContaner">
 				<div class="left-video-Box">
 					<div class="videoBoxdkjb">
-						<video controls autoplay muted loop>
+						<video controls autoplay muted loop class="bigVideoPlay">
 							<source src="../videos/video.mp4" type="">
 						</video>
+						<div class="vidoeplayPV displayNone animason">
+							<div class="playV VideoV cursor_pointer displayNone">
+								<i class="fa-solid fa-play"></i>
+							</div>
+							<div class="pauseV VideoV cursor_pointer displayNone">
+								<i class="fa-solid fa-pause"></i>
+							</div>
+						</div>
 					</div>
 					<div class="jbjbbjwo">
 						<div class="write_vidoevjjbdv">
@@ -1367,13 +1375,13 @@
 							<div class="rowLike">
 								<div class="likeUlikeCon backGrF8">
 									<div class="videoLikeBtn navLeftIconHover">
-										<div class="perLikeVid ma-10 ">
+										<div class="perLikeVid ma-10 " id="videoLike">
 											<i class="fa-regular fa-thumbs-up"></i>
 										</div>
 										<div class="likeVidCou bold">10K</div>
 									</div>
 									<div class="videoUnLikeBtn navLeftIconHover">
-										<div class="perLikeVid">
+										<div class="perLikeVid" id="videoUnLike">
 											<i class="fa-regular fa-thumbs-up fa-rotate-180"></i>
 										</div>
 									</div>
@@ -1499,7 +1507,8 @@
 							</div>
 							<div class="profilComB_1">
 								<div class="inputComDiv bottm-border-1">
-									<input type="text" name="" placeholder="Add a comment...">
+									<input type="text" name="" placeholder="Add a comment..." id="inputId"
+										class="inputClass">
 								</div>
 								<div class="buttonDivCom">
 									<div class="cancelBtn bold cursor_pointer navLeftIconHover displayNone">Cancel</div>
@@ -1575,72 +1584,7 @@
 									<i class="fa-solid fa-ellipsis-vertical"></i>
 								</div>
 							</div>
-							<div class="commentBox">
-								<div class="commentBox_Left">
-									<div class="commentBox_Left_left">
-										<div class="profil_d_ComB cursor_pointer">
-											<img src="../images/user.png">
-										</div>
-									</div>
-									<div class="commentBox_Left_right">
-										<div class="com_sdjjd jbsdvj">
-											<p class="bold">@codeWithRakesh</p>
-											<span>26 minutes ago</span>
-										</div>
-										<div class="com_sdjjd mknl">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor dolor sit
-										</div>
-										<div class="com_sdjjd_bo">
-											<div class="likeUn_enbj cursor_pointer navLeftIconHover likeComment">
-												<i class="fa-regular fa-thumbs-up"></i>
-											</div>
-											<div class="likeUn_enbj cursor_pointer navLeftIconHover unLikeComment">
-												<i class="fa-regular fa-thumbs-up fa-rotate-180"></i>
-											</div>
-											<div class="likeUn_enbj_jbjbdsv bold cursor_pointer navLeftIconHover">
-												Reply
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="commentBox_Right opacity0">
-									<i class="fa-solid fa-ellipsis-vertical"></i>
-								</div>
-							</div>
-							<div class="commentBox">
-								<div class="commentBox_Left">
-									<div class="commentBox_Left_left">
-										<div class="profil_d_ComB cursor_pointer">
-											<img src="../images/user.png">
-										</div>
-									</div>
-									<div class="commentBox_Left_right">
-										<div class="com_sdjjd jbsdvj">
-											<p class="bold">@codeWithRakesh</p>
-											<span>26 minutes ago</span>
-										</div>
-										<div class="com_sdjjd mknl">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor dolor sit
-										</div>
-										<div class="com_sdjjd_bo">
-											<div class="likeUn_enbj cursor_pointer navLeftIconHover likeComment">
-												<i class="fa-regular fa-thumbs-up"></i>
-											</div>
-											<div class="likeUn_enbj cursor_pointer navLeftIconHover unLikeComment">
-												<i class="fa-regular fa-thumbs-up fa-rotate-180"></i>
-											</div>
-											<div class="likeUn_enbj_jbjbdsv bold cursor_pointer navLeftIconHover">
-												Reply
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="commentBox_Right opacity0">
-									<i class="fa-solid fa-ellipsis-vertical"></i>
-								</div>
-							</div>
+
 							<!-- <div class="commentBox"></div> -->
 						</div>
 					</div>
@@ -1728,16 +1672,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1747,16 +1691,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1766,16 +1710,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1785,16 +1729,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1804,16 +1748,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1823,16 +1767,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1842,16 +1786,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1861,16 +1805,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1880,16 +1824,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1899,16 +1843,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1918,16 +1862,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1937,16 +1881,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>
@@ -1956,16 +1900,16 @@
 							<video class="videoRight">
 								<source src="../videos/video.mp4" type="">
 							</video>
-							<img src="../images/thumbnail3.png">
+							<img src="../images/thumbnail3.png" class="imageRight">
 						</div>
 						<div class="videorbjjb_1 cursor_pointer">
 							<div class="pera_sbdsbd1 bold">
-								Lorem ipsum dolor sit amet, consectetur 
+								Lorem ipsum dolor sit amet, consectetur
 							</div>
 							<div class="pera_sbdsbd2">codeWithRakesh</div>
 							<div class="pera_sbdsbd2">62K views • 4 weeks ago</div>
 						</div>
-						<div class="videorbjjb_2 cursor_pointer displayNone">
+						<div class="videorbjjb_2 cursor_pointer opacity0">
 							<i class="fa-solid fa-ellipsis-vertical"></i>
 						</div>
 					</div>

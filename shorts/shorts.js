@@ -120,12 +120,16 @@ for (let i = 0; i < shortBox.length; i++) {
 		lb[i].classList.add('navLeftIconHover');
 	})
 	shortsMain[i].addEventListener('mouseenter', () => {
+		console.log(this)
 		video[i].play()
 		video[i].loop = true
-		video[i].muted = false
+		if (i != 0) {
+			video[i].muted = false 
+		}
 		topIconRight[i].innerHTML = `<i class="fa-solid fa-volume-high"></i>`
 	})
 	shortsMain[i].addEventListener('mouseout', () => {
+		console.log(this)
 		video[i].pause()
 	})
 }
