@@ -1,12 +1,18 @@
 
 // 2nd nav
 
-let navId2 = document.getElementById('navId2');
+let navId2 = document.getElementsByClassName('navId2');
 let hideNav = document.getElementById('hideNav');
 
-navId2.addEventListener('click', () => {
-	hideNav.classList.toggle('displayNone');
-})
+let hideConterdvjb = document.getElementsByClassName('hideConterdvjb')[0]
+
+for (let i = 0; i < navId2.length; i++) {
+	navId2[i].addEventListener('click', () => {
+		hideNav.classList.toggle('displayNone');
+		hideConterdvjb.classList.toggle('displayNone');
+	})
+}
+
 
 // 3re nav
 
@@ -274,6 +280,7 @@ const coomentAdd = () => {
 	let unLikeComment = document.getElementsByClassName('unLikeComment');
 
 	for (let i = 0; i < commentBox.length; i++) {
+		commentBox_Right[i].classList.add('cursor_pointer');
 		commentBox[i].addEventListener('mouseover', () => {
 			commentBox_Right[i].classList.remove('opacity0');
 			commentBox_Right[i].classList.add('opacity1');
@@ -315,6 +322,10 @@ let seeCommentBox = document.getElementsByClassName('seeCommentBox')[0];
 
 commentBtn.addEventListener('click', () => {
 	document.getElementById('inputId').value = "";
+	commentBtn.classList.remove('displayNone');
+	commentBtn.classList.remove('colorW-backB');
+	commentBtn.classList.remove('cursor_pointer');
+	commentBtn.disabled = true;
 
 	let mm3 = `
 		<div class="commentBox">
@@ -394,7 +405,38 @@ for (let i = 0; i < rightVideoPlayer.length; i++) {
 // video Downlode Button
 
 let downCon = document.getElementsByClassName('downCon')[0]
+let downlodeCl = document.getElementsByClassName('downlodeCl')[0]
 
 downCon.addEventListener('click', () => {
+	var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'bigVideoPlay.lastElementChild.src', true);
+    xhr.responseType = 'blob';
+    xhr.onload = function() {
+	    var urlCreator = window.URL || window.webkitURL;
+	    var imageUrl = urlCreator.createObjectURL(this.response);
+	    var tag = document.createElement('a');
+	    tag.href = imageUrl;
+	    tag.target = '_blank';
+	    tag.download = 'sample.mp4';
+	    document.body.appendChild(tag);
+	    tag.click();
+	    document.body.removeChild(tag);
+    };
+    xhr.onerror = err => {
+    	downlodeCl.innerText = 'Faild'
+    	setTimeout(()=>{
+    		downlodeCl.innerText = 'Downlode'
+    	},2000)
+    	console.log(err.message)
+    };
+  xhr.send();
+})
 
+
+// shar Box
+let sharCon = document.getElementsByClassName('sharCon')[0]
+sharCon.addEventListener('click',()=>{
+    navigator.share({
+        text:'shar this video'
+    })
 })

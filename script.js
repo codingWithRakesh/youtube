@@ -220,3 +220,44 @@ window.addEventListener('click', () => {
 		checkWindow = true;
 	}
 })
+
+// home
+let navTCenter = document.getElementsByClassName('navTCenter')[0]
+
+let serchAdd = document.getElementById('serchAdd')
+let leftSerchL = document.getElementById('leftSerchL')
+
+// shorts
+let shortsL = document.getElementById('shortsL')
+setTimeout(()=>{
+	if (screen.width > 900) {
+
+	}
+	else if (screen.width < 900) {
+		navTCenter.classList.add('displayNone')
+	}
+},1000)
+setInterval(()=>{
+	if (screen.width > 900) {
+
+	}
+	else if (screen.width <= 900) {
+
+		if (serchAdd != null) {
+			serchAdd.addEventListener('click',()=>{
+				navTCenter.classList.remove('displayNone')
+			})
+		}
+		if (leftSerchL != null) {
+			leftSerchL.addEventListener('click',()=>{
+				navTCenter.classList.add('displayNone')
+			})
+		}
+		if (shortsL != null) {
+			shortsL.addEventListener('click',()=>{
+				location.href = '../home/index.html';
+			})
+		}
+		
+	}
+},1000)

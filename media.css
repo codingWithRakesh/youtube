@@ -1,0 +1,143 @@
+
+@media screen and (max-width: 900px){
+	/*home page*/
+	.leftNav {
+		display: none;
+	}
+
+	.contentBox{
+		width: 100%;
+	}
+
+	.videoCon {
+		min-height: 16rem;
+	}	
+
+	.shortCon {
+		height: 55vh;
+	}
+
+	.navigateBox {
+		height: 7%;
+		left: 1rem;
+		width: 96%;
+	}
+
+	.videoShow {
+		padding: 7vh 1rem 1rem 1rem;
+	}
+
+	#navId{
+		display: none;
+	}
+
+	.navTLeft {
+		padding: 0 19px;
+	}
+
+	#notificationId{
+		display: none;
+	}
+
+	#uploadId{
+		display: none;
+	}
+
+	#serchAdd{
+		display: flex;
+	}
+
+	.navTCenter{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		background: #fff;
+	}
+
+	.serchBox {
+		width: 86%;
+	}
+
+	.serchNav {
+		width: 100%;
+		left: 0;
+		height: 100%;
+		border-radius: 0;
+	}
+
+	#leftSerchL{
+		display: flex;
+	}
+
+	.profileContaner {
+		top: 0;
+		right: 12vw;
+		height: 98vh;
+	}
+
+
+/*	shorts contaner*/
+	#shortsL{
+		display: flex;
+	}
+
+/*	subscriptions Box*/
+
+
+
+/*library Box*/
+	.libraryContaner {
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.firstSub{
+		display: none;
+	}
+
+	.libryContanerpart:nth-child(3){
+		display: none;
+	}
+
+	.libryContanerpart:nth-child(5){
+		display: none;
+	}
+
+	.clipCon{
+		display: none;
+	}
+
+	.u{
+		display: none;
+	}
+
+	.libryContanerpart {
+		max-height: 217px;
+	}
+
+	.videohsvd {
+		width: 160px;
+		margin: 0 8px;
+	}
+	
+	.videoLibry {
+		height: 90px;
+		width: 160px;
+	}
+
+	.perdhdfh {
+		font-size: 12px;
+		line-height: 14px;
+		margin-bottom: 5px;
+	}
+
+	.fwtgdfw {
+		opacity: 1;
+	}
+
+	.videoListLi{
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+}

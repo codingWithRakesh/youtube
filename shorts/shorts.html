@@ -7,6 +7,8 @@
 	<title>Shorts - YouTube</title>
 	<link rel="stylesheet" type="text/css" href="../style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+	<link rel="shortcut icon" href="../images/youtube.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../media.css">
 </head>
 
 <body>
@@ -1263,6 +1265,9 @@
 		<!-- short contaner -->
 
 		<div class="contentBox width_82">
+			<div id="shortsL">
+				<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><path d="M21,11v1H5.64l6.72,6.72l-0.71,0.71L3.72,11.5l7.92-7.92l0.71,0.71L5.64,11H21z"></path></svg>
+			</div>
 			<div class="shortsContaner">
 				<div class="shortsMain">
 					<div class="shortBox">
@@ -1444,6 +1449,33 @@
 	<style type="text/css">
 		.contaner::-webkit-scrollbar {
 			display: none;
+		}
+
+		@media screen and (max-width: 900px){
+			.navBox{
+				display: none;
+			}
+
+			.contentBox {
+				top: 0;
+				height: 100vh;
+			}
+
+			.shortsContaner{
+				padding: 0;
+			}
+
+			.shortBox{
+				width: 50vw;
+			}
+
+			.shoVideo {
+				width: 41vw;
+			}
+
+			.shoLike{
+				width: 16%;
+			}
 		}
 	</style>
 	<script type="text/javascript" src="../script.js"></script>
