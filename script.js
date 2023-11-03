@@ -229,35 +229,72 @@ let leftSerchL = document.getElementById('leftSerchL')
 
 // shorts
 let shortsL = document.getElementById('shortsL')
-setTimeout(()=>{
+setTimeout(() => {
 	if (screen.width > 900) {
 
 	}
 	else if (screen.width < 900) {
 		navTCenter.classList.add('displayNone')
 	}
-},1000)
-setInterval(()=>{
+}, 1000)
+
+let smaLLNav2 = document.getElementsByClassName('smaLLNav2')
+let HomeSmall = document.getElementsByClassName('HomeSmall')
+let ShortsSmall = document.getElementsByClassName('ShortsSmall')
+let SubscriptionsSmall = document.getElementsByClassName('SubscriptionsSmall')
+let LibarySmall = document.getElementsByClassName('LibarySmall')
+
+let logoClick = document.getElementsByClassName('logoClick')[0]
+
+let leavProdn = document.getElementsByClassName('leavProdn')[0]
+
+setInterval(() => {
 	if (screen.width > 900) {
 
 	}
 	else if (screen.width <= 900) {
 
 		if (serchAdd != null) {
-			serchAdd.addEventListener('click',()=>{
+			serchAdd.addEventListener('click', () => {
 				navTCenter.classList.remove('displayNone')
 			})
 		}
 		if (leftSerchL != null) {
-			leftSerchL.addEventListener('click',()=>{
+			leftSerchL.addEventListener('click', () => {
 				navTCenter.classList.add('displayNone')
 			})
 		}
 		if (shortsL != null) {
-			shortsL.addEventListener('click',()=>{
+			shortsL.addEventListener('click', () => {
 				location.href = '../home/index.html';
 			})
 		}
-		
+
+		for (let i = 0; i < smaLLNav2.length; i++) {
+			HomeSmall[i].addEventListener('click', () => {
+				location.href = '../home/index.html';
+			})
+			ShortsSmall[i].addEventListener('click', () => {
+				location.href = '../shorts/shorts.html';
+			})
+			SubscriptionsSmall[i].addEventListener('click', () => {
+				location.href = '../subscriptions/subscriptions.html';
+			})
+			LibarySmall[i].addEventListener('click', () => {
+				location.href = '../library/library.html';
+			})
+		}
+
+		if (logoClick != null) {
+			logoClick.addEventListener('click', () => {
+				location.href = '../home/index.html';
+			})
+		}
+
+		if (leavProdn != null) {
+			leavProdn.addEventListener('click', () => {
+				profileContaner.classList.remove('displayBlock')
+			})
+		}
 	}
-},1000)
+}, 1000)

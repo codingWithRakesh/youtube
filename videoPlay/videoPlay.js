@@ -409,34 +409,45 @@ let downlodeCl = document.getElementsByClassName('downlodeCl')[0]
 
 downCon.addEventListener('click', () => {
 	var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'bigVideoPlay.lastElementChild.src', true);
-    xhr.responseType = 'blob';
-    xhr.onload = function() {
-	    var urlCreator = window.URL || window.webkitURL;
-	    var imageUrl = urlCreator.createObjectURL(this.response);
-	    var tag = document.createElement('a');
-	    tag.href = imageUrl;
-	    tag.target = '_blank';
-	    tag.download = 'sample.mp4';
-	    document.body.appendChild(tag);
-	    tag.click();
-	    document.body.removeChild(tag);
-    };
-    xhr.onerror = err => {
-    	downlodeCl.innerText = 'Faild'
-    	setTimeout(()=>{
-    		downlodeCl.innerText = 'Downlode'
-    	},2000)
-    	console.log(err.message)
-    };
-  xhr.send();
+	xhr.open('GET', 'bigVideoPlay.lastElementChild.src', true);
+	xhr.responseType = 'blob';
+	xhr.onload = function () {
+		var urlCreator = window.URL || window.webkitURL;
+		var imageUrl = urlCreator.createObjectURL(this.response);
+		var tag = document.createElement('a');
+		tag.href = imageUrl;
+		tag.target = '_blank';
+		tag.download = 'sample.mp4';
+		document.body.appendChild(tag);
+		tag.click();
+		document.body.removeChild(tag);
+	};
+	xhr.onerror = err => {
+		downlodeCl.innerText = 'Faild'
+		setTimeout(() => {
+			downlodeCl.innerText = 'Downlode'
+		}, 2000)
+		console.log(err.message)
+	};
+	xhr.send();
 })
 
 
 // shar Box
 let sharCon = document.getElementsByClassName('sharCon')[0]
-sharCon.addEventListener('click',()=>{
-    navigator.share({
-        text:'shar this video'
-    })
+sharCon.addEventListener('click', () => {
+	navigator.share({
+		text: 'shar this video'
+	})
 })
+
+// small comment box
+let totalComment = document.getElementsByClassName('totalComment')[0]
+setTimeout(() => {
+	if (screen.width <= 900) {
+		seeCommentBox.classList.add('displayNone')
+		totalComment.addEventListener('click', () => {
+			seeCommentBox.classList.toggle('displayNone')
+		})
+	}
+}, 1000)

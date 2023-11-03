@@ -1,17 +1,25 @@
-
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
 	/*home page*/
+
+	.contaner::-webkit-scrollbar {
+		display: none;
+	}
+
+	.navBox {
+		width: 100%;
+	}
+
 	.leftNav {
 		display: none;
 	}
 
-	.contentBox{
+	.contentBox {
 		width: 100%;
 	}
 
 	.videoCon {
 		min-height: 16rem;
-	}	
+	}
 
 	.shortCon {
 		height: 55vh;
@@ -19,7 +27,7 @@
 
 	.navigateBox {
 		height: 7%;
-		left: 1rem;
+		left: 0;
 		width: 96%;
 	}
 
@@ -27,7 +35,7 @@
 		padding: 7vh 1rem 1rem 1rem;
 	}
 
-	#navId{
+	#navId {
 		display: none;
 	}
 
@@ -35,19 +43,19 @@
 		padding: 0 19px;
 	}
 
-	#notificationId{
+	#notificationId {
 		display: none;
 	}
 
-	#uploadId{
+	#uploadId {
 		display: none;
 	}
 
-	#serchAdd{
+	#serchAdd {
 		display: flex;
 	}
 
-	.navTCenter{
+	.navTCenter {
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -66,7 +74,7 @@
 		border-radius: 0;
 	}
 
-	#leftSerchL{
+	#leftSerchL {
 		display: flex;
 	}
 
@@ -74,41 +82,46 @@
 		top: 0;
 		right: 12vw;
 		height: 98vh;
+		z-index: 30;
+	}
+
+	.leavProdn {
+		display: none;
 	}
 
 
-/*	shorts contaner*/
-	#shortsL{
+	/*	shorts contaner*/
+	#shortsL {
 		display: flex;
 	}
 
-/*	subscriptions Box*/
+	/*	subscriptions Box*/
 
 
 
-/*library Box*/
+	/*library Box*/
 	.libraryContaner {
 		width: 100%;
 		padding: 0 10px;
 	}
 
-	.firstSub{
+	.firstSub {
 		display: none;
 	}
 
-	.libryContanerpart:nth-child(3){
+	.libryContanerpart:nth-child(3) {
 		display: none;
 	}
 
-	.libryContanerpart:nth-child(5){
+	.libryContanerpart:nth-child(5) {
 		display: none;
 	}
 
-	.clipCon{
+	.clipCon {
 		display: none;
 	}
 
-	.u{
+	.u {
 		display: none;
 	}
 
@@ -120,7 +133,7 @@
 		width: 160px;
 		margin: 0 8px;
 	}
-	
+
 	.videoLibry {
 		height: 90px;
 		width: 160px;
@@ -136,8 +149,333 @@
 		opacity: 1;
 	}
 
-	.videoListLi{
+	.videoListLi {
 		overflow-x: auto;
 		overflow-y: hidden;
+	}
+
+	/*	video play */
+	.navId2 {
+		display: none;
+	}
+
+	.videoPlayContaner {
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	.left-video-Box {
+		width: 100%;
+		min-height: 100%;
+		height: auto;
+		padding-left: 0;
+	}
+
+	.rowLikeNadSubs {
+		height: 100%;
+		flex-wrap: wrap;
+	}
+
+	.rowSubscribe {
+		width: 100%;
+		height: 55px;
+	}
+
+	.subscribeBtnBox {
+		right: 0;
+		left: inherit;
+	}
+
+	.rowLike {
+		width: 100%;
+		height: 55px;
+		justify-content: flex-start;
+	}
+
+	.videoBoxdkjb {
+		height: 20rem;
+		position: fixed;
+		width: 100%;
+		z-index: 29;
+		top: 8vh;
+		left: 0;
+		border-radius: 0;
+	}
+
+	.videoBoxdkjb video {
+		border-radius: 0;
+	}
+
+	.right-video-Box {
+		padding-left: 0;
+	}
+
+	.rightVideoPlayer {
+		width: 100%;
+		height: 60vh;
+		/*		border: 1px solid;*/
+		flex-wrap: wrap;
+	}
+
+	.jbjbbjwo {
+		padding-top: 47vh;
+	}
+
+	.seeCommentBox {
+		background: #F8F8F8;
+		border-radius: 10px;
+		padding: 10px;
+	}
+
+	.totalComment {
+		background: #F8F8F8;
+		border-radius: 10px;
+		padding: 10px;
+	}
+
+	.right-video-Box {
+		padding-left: 0;
+	}
+
+	.videorbjjb_2 {
+		display: none;
+	}
+
+	.videorbjjb {
+		width: 100%;
+		height: 80%;
+		margin-right: 0;
+		border-radius: 0;
+	}
+
+	.videorbjjb img {
+		border-radius: 0;
+	}
+
+	.videorbjjb vidoe {
+		border-radius: 0;
+	}
+
+	.videorbjjb_1 {
+		width: 100%;
+		height: 20%;
+		position: relative;
+		padding: 5px 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.videoPro1 {
+		width: 40px;
+		height: 40px;
+		display: block;
+		/*		border: 1px solid;*/
+		position: absolute;
+		left: 8px;
+
+	}
+
+	.videoPro1 img {
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	.pera_sbdsbd1 {
+		margin-left: 55px;
+	}
+
+	.pera_sbdsbd2 {
+		margin-left: 55px;
+	}
+
+	.lastCO {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.navTRight {
+		margin-right: 0;
+		width: 21%;
+	}
+
+	.navLeftIcon {
+		height: 24px;
+		width: 24px;
+		margin-right: 10px;
+	}
+
+	.contaner::-webkit-scrollbar {
+		display: none;
+	}
+
+	.videoCon {
+		flex-wrap: wrap;
+	}
+
+	.playVide1 {
+		width: 100%;
+	}
+
+	.VideoC img {
+		border-radius: 0;
+	}
+
+	.VideoC video {
+		border-radius: 0;
+	}
+
+	.shortSec {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+
+	.shortsDiv {
+		height: 248px;
+		width: 148px;
+		margin-right: 8px;
+		position: relative;
+	}
+
+	.shortVid {
+		height: 248px;
+		width: 148px;
+	}
+
+	.shortWri {
+		position: absolute;
+		left: 5px;
+		bottom: 5px;
+		z-index: 9;
+	}
+
+	.shortW1 {
+		color: #fff;
+	}
+
+	.shortCon {
+		height: 43vh;
+	}
+
+	.shortBox {
+		width: 100% !important;
+		position: relative;
+		padding: 0;
+	}
+
+	.shoVideo {
+		width: 100% !important;
+	}
+
+	.shoLike {
+		position: absolute;
+		z-index: 9;
+		right: 5px;
+		bottom: 5px;
+		height: 88%;
+	}
+
+	#shortsL {
+		z-index: 19;
+	}
+
+	.ProSub {
+		width: 70%;
+	}
+
+	.allCon {
+		color: #fff;
+	}
+
+	.videoTop {
+		justify-content: flex-end;
+	}
+
+	.topIconLeft {
+		display: none;
+	}
+
+	.videoProfileC {
+		width: 15% !important;
+	}
+
+	.navBox {
+		width: 100%;
+	}
+
+	.videoShow {
+		padding: 7vh 0 2vh 0;
+	}
+
+	.navigateBox {
+		left: 0;
+		width: 100%;
+	}
+
+	.serchNav {
+		z-index: 40;
+	}
+
+	.videoPlayContaner {
+		padding: 0;
+	}
+
+	.left-video-Box {
+		padding: 0;
+	}
+
+	.jbjbbjwo {
+		padding-top: 36vh;
+	}
+
+	.videoBoxdkjb {
+		height: 15rem;
+		left: 0;
+		border-radius: 0;
+		width: 100%;
+	}
+
+	.videoBoxdkjb video {
+		border-radius: 0;
+	}
+
+	.right-video-Box {
+		padding-left: 0;
+	}
+
+	.rightVideoPlayer {
+		height: 40vh;
+	}
+
+	.videorbjjb {
+		height: 70%;
+	}
+
+	.videorbjjb_1 {
+		height: 30%;
+		padding: 14px 0;
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.pera_sbdsbd1 {
+		min-height: 1rem;
+
+	}
+
+	.pera_sbdsbd2 {
+		height: 18px;
+	}
+
+	.profileContaner {
+		width: 100%;
+		right: 0;
+	}
+
+	.leavProdn {
+		display: flex;
 	}
 }

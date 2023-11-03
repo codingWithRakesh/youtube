@@ -54,10 +54,10 @@ for (let i = 0; i < video.length; i++) {
     })
 
     video[i].addEventListener('click', () => {
-        if (video[i].offsetHeight <= 200) {
+        if (video[i].offsetHeight <= 230) {
             location.href = '../videoPlay/videoPlay.html';
         }
-        else if (video[i].offsetHeight >= 200) {
+        else if (video[i].offsetHeight >= 230) {
             location.href = '../shorts/shorts.html';
         }
     })
@@ -103,18 +103,3 @@ leftBtn.addEventListener('click', () => {
         allId.classList.remove('displayNone');
     }
 })
-
-// let navigateBox = document.getElementsByClassName('navigateBox')[0];
-// const widthNav94 = () =>{
-//     navigateBox.classList.add('width_94');
-//     navigateBox.classList.remove('width_79');
-//     navigateBox.classList.remove('left_19');
-//     navigateBox.classList.add('left_5');
-// }
-
-// const widthNav79 = () =>{
-//     navigateBox.classList.remove('width_94');
-//     navigateBox.classList.add('width_79');
-//     navigateBox.classList.add('left_19');
-//     navigateBox.classList.remove('left_5');
-// }
